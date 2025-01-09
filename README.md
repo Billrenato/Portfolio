@@ -1,4 +1,4 @@
-Portfólio Pessoal
+# Portfólio Pessoal
 
 Um projeto de portfólio pessoal desenvolvido em HTML, CSS e JavaScript.
 
@@ -6,10 +6,10 @@ Descrição
 
 Este projeto visa criar uma plataforma para exibir minhas habilidades e experiências profissionais, incluindo:
 
-- Seção de apresentação
-- Seção de projetos
-- Seção de sobre mim
-- Seção de contatos
+- apresentação
+- projetos
+- sobre mim
+- contatos
 
 Tecnologias Utilizadas
 
