@@ -242,6 +242,10 @@ a{
     background-color: #132b3d;
     border: 1px solid rgb(201, 199, 199);
     margin: 20px;
+    box-shadow": "0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius": "10px;
+
+
 }
 .blog-img{
     width: 100%;
