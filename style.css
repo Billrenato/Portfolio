@@ -6,14 +6,16 @@
 
 }
 header{
-    background-color:#132b3d;
+    background-color:#1b2727;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
 }
 li{
     list-style: none;
     font-size: 14PX;
 }
 a{
-    color: #e5e6d1;
+    color: #1b2727;
     text-decoration: none;
 }
 .navbar{
@@ -22,6 +24,8 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 0 34px;
+    
+    
 }
 .logo{
     font-size: 2rem;
@@ -36,7 +40,7 @@ a{
     transition: 0.5s ease;
 }
 .nav-link:hover{
-    color: #2e7582;
+    color: #282e27;
 }
 .hamburguer{
     display: none;
@@ -48,7 +52,7 @@ a{
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color: #e5e6d1;
+    background-color: #6b8e4e;
     transition: all 0.3s ease-in-out;
 }
 @media (max-width:768px){
@@ -71,7 +75,7 @@ a{
         top: 70px;
         gap: 0;
         border-radius: 0 0 20px 20px;
-        background-color: #224a5ed8 ;
+        background-color:  #3c5148;
         text-align: center;
         flex-direction: column;
         width: 100%;
@@ -85,16 +89,48 @@ a{
     }
     
 }
-.container{
-    background-color: #132b3d ;
+.container {
+    background-image: linear-gradient(135deg, #3c5148 50%, #1b2727 50%);
     display: flex;
     align-items: center;
     height: 700px;
     width: 100%;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
+.container a {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+  }
+  
+  .container h1,h2,p {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+  }
+  
+  .container.animar a {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .container.animar h1,h2,p {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+
+  
+  
+  
+
+
+
+
+  
 .container-sobre{
-    background-color: #132b3d;
+    background-color: #3c5148;
     display: flex;
     align-items: center;
     height: 800px;
@@ -103,12 +139,13 @@ a{
 }
 .container .legenda img{
     width: 45px;
+    margin: 20px;
 }
 .sobre-min .container-sobre .legenda-sobre img{
     width: 45px;
 }
 .container img {
-    width: 300px;
+    width: 450px;
  
 }
 .container-sobre img {
@@ -116,35 +153,34 @@ a{
    margin: 100px;
 
 }
-.legenda{
-    
-    
-}
+
 .legenda h1{
     font-size: 70px;
-    color: #e5e6d1 ;
+    color: #b2c5b2  ;
 
     
 }
+
 .legenda h2{
     font-size: 40px;
-    color: #e5e6d1 ;
+    color: #1b2727  ;
 }
 .legenda p{
     font-size: 20px;
     padding: 10px;
-    color: #2e7582 ;
+    color: #6b8e4e ;
 }
 .legenda-sobre p{
-    font-size: 16px;
+    font-size: 24px;
     margin: 100px;
-    color: #e5e6d1 ;
+    color: #b2c5b2 ;
     
 }
 @media screen and  (max-width:768px){
     .container{
         width:100%;
         flex-direction: column-reverse;
+        background-image: linear-gradient(135deg, #3c5148 75%, #1b2727 25%);
     }
 
 }
@@ -157,13 +193,17 @@ a{
     .legenda h1{
         font-size: 32px;
         
+        
     }
     .legenda h2{
         font-size: 30px;
         
+        
     }
     .legenda p{
         font-size: 15px;
+        
+        
         
         
     }
@@ -210,7 +250,7 @@ a{
     flex-direction: column;
     padding: 40px;
     border-bottom:  1px solid rgba(0,0,0,0,0.5);
-    background-color:#e5e6d1  ;
+    background-color:#3c5148;
 }
 .blog-heading{
     display: flex;
@@ -223,7 +263,7 @@ a{
 
 .blog-heading h3{
     font-size: 2.4rem;
-    color: #132b3d ;
+    color: #1b2727 ;
     font-weight: 600;
     
 }
@@ -239,69 +279,75 @@ a{
 }
 .blog-box{
     width: 360px;
-    background-color: #132b3d;
-    border: 1px solid rgb(201, 199, 199);
-    margin: 20px;
+    background-color: #1b2727;
+    margin: 16px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 
 
 }
+.blog-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+  }
 .blog-img{
     width: 100%;
-    height: auto;
+    height: 200px; /* ajuste a altura aqui */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
 
 }
-.blog-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    
-}
+
+
 .blog-text{
-    padding: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
+
+
 .blog-text span{
-    color: #2e7582 ;
+    color: #1b2727 ;
     font-size: 0.9rem;
 
 }
 .blog-text .blog-title{
     font-size: 1.3rem;
     font-weight: 500;
-    color: #e5e6d1 ;
+    color: #b2c5b2 ;
+    margin-top: 20px;
 }
 .blog-text .blog-title:hover{
-    color: 224a5e;
+    
     transition: all ease 0.3s;
     
 }
 .blog-text p{
-    color: #e5e6d1  ;
+    color: #b2c5b2  ;
     font-size: 0.9rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3-web;
+    
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 20px 0px;
+    margin: 12px 0px;
     
     
 }
 .blog-text a{
-    color: #2e7582;
+    color: #6b8e4e;
+    margin: 20px;
 }
 .blog-text a:hover{
-    color:#e5e6d1  ;
+    color:#6b8e4e;
     transition: all ease 0.3s;
 }
 .contato{
     width: 100%;
-    height: 200px;
-    background-color:#e5e6d1  ;
+    height: 250px;
+    background-color:#b2c5b2;
     text-align: center;
     align-items: center;
     padding: 50px;
@@ -309,15 +355,16 @@ a{
     
 }
 .contato img{
-    width: 60px;
-    padding: 10px;
+    width: 100px;
+    padding: 20px;
     
 }
     
 .contato h1{
     
-    font-size: 30px;
-    color: #132b3d;
+    font-size: 55px;
+    color: #1b2727;
+    margin-top: 100px;
     
 }
 
@@ -335,6 +382,30 @@ a{
 .contato .linkedin{
     width: 60px;
 }
+.legenda-sobre h3 {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+  }
+  
+  .legenda-sobre p {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+  }
+  
+  .legenda-sobre.animar h3 {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .legenda-sobre.animar p {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+
+
 
 
 
