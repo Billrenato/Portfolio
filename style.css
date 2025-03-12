@@ -15,7 +15,7 @@ li{
     font-size: 14PX;
 }
 a{
-    color: #1b2727;
+    color: #7a9288;
     text-decoration: none;
 }
 .navbar{
@@ -40,7 +40,7 @@ a{
     transition: 0.5s ease;
 }
 .nav-link:hover{
-    color: #282e27;
+    color: #7a9288;
 }
 .hamburguer{
     display: none;
@@ -52,7 +52,7 @@ a{
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color: #6b8e4e;
+    background-color: #7a9288;
     transition: all 0.3s ease-in-out;
 }
 @media (max-width:768px){
@@ -97,28 +97,6 @@ a{
     width: 100%;
     justify-content: space-evenly;
 }
-.container a {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s ease-in-out;
-  }
-  
-  .container h1,h2,p {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 1s ease-in-out;
-  }
-  
-  .container.animar a {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .container.animar h1,h2,p {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
 
 
   
@@ -171,7 +149,7 @@ a{
     color: #6b8e4e ;
 }
 .legenda-sobre p{
-    font-size: 24px;
+    font-size: 20px;
     margin: 100px;
     color: #b2c5b2 ;
     
@@ -236,7 +214,7 @@ a{
        
     }  
     .contato img{
-        width: 30px;
+        width: 15px;
         
         
     }
@@ -355,7 +333,7 @@ a{
     
 }
 .contato img{
-    width: 100px;
+    width: 80px;
     padding: 20px;
     
 }
@@ -404,6 +382,44 @@ a{
     transform: translateX(0);
   }
   
+
+  .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1b2727;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #3c5148;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px;
+  color: #b2c5b2;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #b2c5b2;
+}
+
+
+
 
 
 
