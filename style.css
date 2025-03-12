@@ -111,7 +111,7 @@ a{
 
   
 .container-sobre{
-    background-color:#1e1e1e;
+    background-color:#3e3e42af;
     display: flex;
     align-items: center;
     height: 1000px;
@@ -275,7 +275,7 @@ a{
 }
 .blog-box{
     width: 360px;
-    background-color: #1e1e1e;
+    background-color: #3e3e42af;
     margin: 16px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
