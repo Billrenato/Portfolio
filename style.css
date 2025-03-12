@@ -406,7 +406,8 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #1e1e1e;
+  background-color: #3e3e42af
+      ;
   
 }
 
