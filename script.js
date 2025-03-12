@@ -18,9 +18,3 @@ window.addEventListener('scroll', function() {
   });
 
 
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const Container = document.querySelector('.container');
-    Container.classList.add('animar');
-  });
