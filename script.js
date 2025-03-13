@@ -19,32 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
-  // Fecha o menu se clicar fora dele
-  document.addEventListener("click", (event) => {
-      if (!navMenu.contains(event.target) && !hamburguer.contains(event.target)) {
-          hamburguer.classList.remove("active");
-          navMenu.classList.remove("active");
-      }
-  });
-
-  // Animação de imagem ao carregar a página
-  const img = document.querySelector('.container img');
-  if (img) {
-      setTimeout(() => {
-          img.classList.add('loaded');
-      }, 500);
-  }
-
-  // Animação de legenda ao rolar a página
-  window.addEventListener("scroll", function () {
-      const legendaSobre = document.querySelector(".legenda-sobre");
-      if (!legendaSobre) return;
-
-      const scrollTop = window.scrollY;
-      const offsetTop = legendaSobre.getBoundingClientRect().top + scrollTop;
-
-      if (scrollTop > offsetTop - 200) {
-          legendaSobre.classList.add("animar");
-      }
-  });
+ 
 });
