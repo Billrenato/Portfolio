@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background-color: #3e3e42;
+    
 
 }
 header{
@@ -151,6 +151,7 @@ a{
 .legenda-sobre p{
     font-size: 14px;
     margin: 100px;
+    color: #809eff;
     
 }
 @media screen and  (max-width:768px){
@@ -191,6 +192,7 @@ a{
     }
     .legenda-sobre h3{
         font-size: 15px;
+        text-align: center;
         
         
         
@@ -198,7 +200,7 @@ a{
     .legenda-sobre p{
         font-size: 10px;
         margin: 20px;
-        color:#809eff;
+        
         
         
     } 
@@ -241,6 +243,7 @@ a{
     padding: 40px;
     border-bottom:  1px solid rgba(0,0,0,0,0.5);
     background-color :#3e3e42;
+    
 }
 .blog-heading{
     display: flex;
@@ -253,8 +256,9 @@ a{
 
 .blog-heading h3{
     font-size: 2.4rem;
-    color: #1e1e1e;
+    color: #f0ebe3;
     font-weight: 600;
+
     
 }
 .blog-container{
@@ -360,7 +364,7 @@ a{
 
 .legenda-sobre h3{
     font-size: 35px;
-    text-align: left;
+    text-align: center;
     margin: 100px;
     
     
@@ -372,9 +376,7 @@ a{
 }
 
 .Skills {
-    margin: 20px;
-    padding: 10px;
-    background-color:  #3e3e42;
+background-color: #3e3e42; 
     
 }
 .skills-container h1 {
@@ -398,15 +400,22 @@ a{
 .card {
   margin: 20px;
   padding: 10px;
-  background-color: #3e3e42;
+  background-color: #444450;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
   
 }
 
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #809eff;
+}
 .card img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   margin: 10px;
   
 }
