@@ -111,7 +111,7 @@ a{
 
   
 .container-sobre{
-    background-color:#3e3e42af;
+    background-color:#3e3e42;
     display: flex;
     align-items: center;
     height: 1000px;
@@ -275,7 +275,7 @@ a{
 }
 .blog-box{
     width: 360px;
-    background-color: #3e3e42af;
+    background-color: #1e1e1e;
     margin: 16px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -306,7 +306,7 @@ a{
 
 
 .blog-text span{
-    color: #1e1e1e;
+    color: #3e3e42af;
     font-size: 0.9rem;
 
 }
@@ -406,7 +406,7 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #3e3e42af
+  background-color: #3e3e42
       ;
   
 }
@@ -414,7 +414,7 @@ a{
 .card {
   margin: 20px;
   padding: 16px;
-  background-color: #3e3e42;
+  background-color: #1e1e1e;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 250px;
@@ -431,7 +431,7 @@ a{
 .card h3 {
   font-size: 15px;
   margin: 10px;
-  color: #1e1e1e;
+  color: #809eff;
 }
 
 .card p {
@@ -454,6 +454,11 @@ a{
     }
   }
   
+
+
+
+
+
 
 
 
