@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    background-color: #3e3e42;
 
 }
 header{
@@ -92,7 +93,7 @@ a{
     
 }
 .container {
-    background-image: linear-gradient(135deg, #3e3e42 50%, #1e1e1e 50%);
+    background-image: linear-gradient(135deg, #3e3e42 50%, #3e3e42 50%);
     display: flex;
     align-items: center;
     height: 700px;
@@ -119,7 +120,7 @@ a{
     justify-content:space-evenly;
 }
 .container .legenda img{
-    width: 45px;
+    width: 35px;
     margin: 20px;
 }
 .sobre-min .legenda-sobre img{
@@ -130,14 +131,7 @@ a{
  
 }
 
-.container img {
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .container img.loaded {
-    transform: translateX(0);
-  }
+
 .legenda h1{
     font-size: 70px;
     color: #f0ebe3  ;
@@ -157,7 +151,6 @@ a{
 .legenda-sobre p{
     font-size: 14px;
     margin: 100px;
-    color: #f0ebe3 ;
     
 }
 @media screen and  (max-width:768px){
@@ -376,31 +369,21 @@ a{
     height: auto;
     
 }
-.contato .linkedin{
-    width: 60px;
+
+.Skills {
+    margin: 80px;
+    padding: 10px;
+    background-color:  #3e3e42;
+    
 }
-.legenda-sobre h3 {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+.skills-container h1 {
+    padding: 50px;
+    text-align: center;
+
+    color:#f0ebe3;
+    
+    
   }
-  
-  .legenda-sobre p {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 1s ease-in-out;
-  }
-  
-  .legenda-sobre.animar h3 {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .legenda-sobre.animar p {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
 
   .skills-container {
   display: flex;
@@ -413,16 +396,16 @@ a{
 
 .card {
   margin: 20px;
-  padding: 16px;
-  background-color: #1e1e1e;
+  padding: 10px;
+  background-color: #3e3e42;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 .card img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin: 10px;
   
 }
@@ -440,22 +423,22 @@ a{
   color: #f0ebe3;
 }
 
-@media (max-width: 768px) {
-    .legenda-sobre {
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
-    .container img {
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-      }
-  
-    .animar {
-      transform: translateY(0);
-      opacity: 1;
-    }
+
+.pulsar {
+    animation: pulsar 2s infinite;
   }
   
-
-
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 
 
