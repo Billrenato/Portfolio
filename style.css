@@ -332,7 +332,8 @@ a{
 }
 .blog-text a{
     color: #809eff;
-    margin: 20px;
+    margin: 15px;
+    
 }
 .blog-text a:hover{
     color:#809eff;
@@ -450,8 +451,16 @@ background-color: #3e3e42;
     }
   }
 
+  .blog-text img{
 
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 200px;
+    
+    
 
+  }
 
 
 
