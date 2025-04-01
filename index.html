@@ -7,14 +7,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Renato JR</title>
 </head>
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1000, // Duração da animação (em ms)
+          easing: "ease-in-out", // Tipo de animação
+          once: false , // Anima apenas uma vez ao rolar
+          delay: 500 // Atraso antes de iniciar a animação
+        });
+      </script>
+
     <header>
         <nav class="navbar">
             <a name="C0" class="logo">RM </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#C0" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#C1" class="nav-link">SOBRE</a></li>
                 <li class="nav-item"><a href="#C2" class="nav-link">PROJETOS</a></li>
                 
                 
@@ -28,7 +40,7 @@
     </header>
     <div class="container">
         
-        <div class="legenda">
+        <div class="legenda"data-aos="fade-up">
             <h1>DEVELOPER<br>Full stack</h1>
             <h2>Renato Jr Mathias</h2>
             <p>Desenvolvedor de software <br> amante da tecnologia.</p>
@@ -45,13 +57,34 @@
         
 
     </div>
-    <section id="blog">
-        <div class="blog-heading">
+
+
+    <section class="sobre-min" >
+        
+        <div class="container-sobre" >
+            
+            <div class="legenda-sobre"  data-aos="fade-up">
+                <h3><a name="C1" class="pulsar" data-aos="fade-up">SOBRE</a></h3>             
+                <p> <br data-aos="fade-up">Iniciei minha jornada na tecnologia em 2021, cursando Análise e Desenvolvimento de Sistemas. Sempre fui apaixonado por tecnologia, desde a construção de computadores e hardware até o mundo dos jogos e inovações do setor. 
+                    <br >
+                    <br>
+                    Em 2023, conquistei meu primeiro estágio na Topdow Sistemas , onde atuei como analista e criador de testes automatizados. Permanecei na empresa até a conclusão do meu curso, adquirindo experiência prática e aprimorando minhas habilidades.
+                    <br data-aos="fade-up">
+                    <br>
+                    Atualmente, trabalho como Analista e Desenvolvedor na Psoft Desenvolvimento, desenvolvendo soluções e implementando ferramentas para sistemas ERP .
+                    <br data-aos="fade-up">
+                    <br>
+                    Sou movido pela inovação e pela busca constante por aprendizado, sempre em busca de novos desafios na área de tecnologia.</p>
+            </div>
+        </div>
+    </section>
+    <section id="blog" >
+        <div class="blog-heading" data-aos="fade-up">
             
             <h3><a name="C2"></a>PROJETOS</h3>
 
         </div>
-        <div class="blog-container">
+        <div class="blog-container" data-aos="fade-up">
 
 
             <div class="blog-box">
@@ -85,7 +118,7 @@
                     <div class="blog-img" style="background-image: url('img/whatsappbot.png');"></div>
                     <a href="https://github.com/Billrenato/Ferramenta-automacao-Python" class="blog-title">WhatsApp bot</a>
                     <p>Este é um bot para WhatsApp desenvolvido com a biblioteca WhatsApp-web.js.</p>
-                    <a href="https://github.com/Billrenato/Ferramenta-automacao-Python"><img src="img/node.png" alt="">visitar</a>
+                    <a href="https://github.com/Billrenato/WhatsApp-Bot"><img src="img/node.png" alt="">visitar</a>
                 </div>
             </div>
 
@@ -147,6 +180,9 @@
 <script src="script.js"></script>    
 </body>
 </html>
+
+
+
 
 
 
